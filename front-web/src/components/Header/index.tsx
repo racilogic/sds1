@@ -5,8 +5,8 @@ import './styles.css';
 
 const Header = () => (
     <header className="main-header">
+        <Logo />
         <Link to="/">
-            <Logo />
             <div className="logo-text">
                 <span className="logo-text-1">Big Game</span>
                 <span className="logo-text-2"> Survey</span>
