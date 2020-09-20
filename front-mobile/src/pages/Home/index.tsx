@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
-import { Text, StyleSheet, View, Image, Alert } from 'react-native';
+import { Text, StyleSheet, View, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import Header from '../../components/Header';
 import { useNavigation } from '@react-navigation/native';
@@ -9,7 +9,6 @@ const Home = () => {
   const navigation = useNavigation();
   
   const handleOnPress = () => {
-
     navigation.navigate('CreateRecord');
   }
 
@@ -53,7 +52,6 @@ const styles = StyleSheet.create({
   title: {
     color: '#00D4FF',
     fontSize: 36,
-    fontWeight: 'bold',
     marginTop: 31,
     fontFamily: "Play_700Bold",
   },
@@ -86,7 +84,6 @@ const styles = StyleSheet.create({
     paddingLeft: 50,
     paddingRight: 50,
     fontFamily: "Play_700Bold",
-    fontWeight: 'bold',
     fontSize: 18,
     color: '#0B1F34',
   }
